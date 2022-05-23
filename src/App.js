@@ -1,42 +1,53 @@
-import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import React, { useState, useEffect } from 'react';
+import './main.css';
+import Home from './component/Home';
+import About from './component/About';
+import Project from './component/Project';
+import Contact from './component/Contact';
+import Skills from './component/Skills';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from "./component/Navbar"
+import { Container, Box, Text } from '@chakra-ui/react';
+import CircleLoader from "react-spinners/CircleLoader";
 
-function App() {
-  return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
+
+const App = () => {
+  const [loading, setLoading] = useState(false);  
+  useEffect(() => {
+    setLoading(true)
+    document.title = 'Loading...'
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+  }, []);
+  return(
+      <Box>
+        {loading ? (
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              minH="100vh"
             >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
+              <CircleLoader color="#fff200" loading={loading} size={40} />
+              <Text as="h2" fontSize="xl" mx={3} color="yellowNeon">Loading...</Text>
+            </Box>
+          ) : (
+            <Container maxW="container.lg">
+              <Navbar />
+              <Routes>
+                <Route path='/' element={<Home />}/>
+                <Route path='about' element={<About />}/>
+                <Route path='project' element={<Project />}/>
+                <Route path='skills' element={<Skills/>} />
+                <Route path='contact' element={<Contact />}/>
+              </Routes>
+            </Container>
+          )
+        }
       </Box>
-    </ChakraProvider>
-  );
+  )
 }
 
 export default App;
+
