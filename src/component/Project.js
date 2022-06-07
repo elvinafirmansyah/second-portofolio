@@ -23,7 +23,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dictionorycdn.vercel.app/'
         },
         {
             id: 2,
@@ -34,7 +35,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://vinaquote.netlify.app/'
         },
         {
             id: 3,
@@ -45,7 +47,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://vina-news.netlify.app/'
         },
         {
             id: 4,
@@ -56,7 +59,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://csb-19cuk6.netlify.app/'
         },
         {
             id: 5,
@@ -67,7 +71,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://engxzu.netlify.app/'
         },
         {
             id: 6,
@@ -78,7 +83,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://elvinagithub.netlify.app/'
         },
         {
             id: 7,
@@ -89,7 +95,8 @@ const Project = () => {
             buttonText: 'Github',
             icon: 'fa-brands fa-github fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://profilecardelvina.netlify.app/'
         },
         {
             id: 8,
@@ -100,7 +107,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/17081283-Shoes-App-Mobile-Design/attachments/12171342?mode=media'
         },
         {
             id: 9,
@@ -111,7 +119,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/16344929-Dierex-Electro-Chat-Fast-and-Easy-for-You/attachments/8720825?mode=media'
         },
         {
             id: 10,
@@ -122,7 +131,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/16408144-Management-Project-Task-UI-Design-by-Elvina/attachments/10255311?mode=media'
         },
         {
             id: 11,
@@ -133,7 +143,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/17081347-Wallet-App/attachments/12171415?mode=media',
         },
         {
             id: 12,
@@ -144,7 +155,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/16250626-Vencvel-Makes-it-Easy-for-you-to-Travel/attachments/8115591?mode=media'
         },
         {
             id: 13,
@@ -155,7 +167,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/16622852-Crypto-Dashboard-by-Elvina/attachments/11653182?mode=media'
         },
         {
             id: 14,
@@ -166,7 +179,8 @@ const Project = () => {
             buttonText: 'Dribble',
             icon: 'fa-brands fa-dribbble fa-lg',
             linkText: 'See More',
-            iconLink: 'fa-solid fa-link'
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dribbble.com/shots/17439969-Engxzu-English-learn-Platform/attachments/12570570?mode=media'
         },
     ]
 
