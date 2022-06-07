@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/icon": "^3.0.0",
+    "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -20,6 +21,8 @@
     "react-scripts": "5.0.1",
     "react-spinners": "^0.12.0",
     "react-use-disclosure": "^5.1.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.17",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

@@ -18,7 +18,7 @@ const App = () => {
     document.title = 'Loading...'
     setTimeout(() => {
       setLoading(false)
-    }, 5000);
+    }, 4000);
   }, []);
   return(
       <Box>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Swal from 'sweetalert2'
 import {
     Box,
     Text,
@@ -7,12 +8,12 @@ import {
     Textarea,
     SimpleGrid,
     Button,
+    Flex,
 } from "@chakra-ui/react"
 import { send } from 'emailjs-com'
 
 
 const Contact = () => {
-
     const [sendName, setSendName] = useState('');
     const [sendEmail, setSendEmail] =  useState('');
     const [message, setMessage] = useState('');
@@ -37,9 +38,19 @@ const Contact = () => {
             {sendName, sendEmail, message},
             'b71T6Ns8_PVoBz1vW'
         ).then((response) => {
-            console.log('Message has been sent successfully', response.status, response.text)
+            Swal.fire({
+                title: 'Thank You',
+                text: 'Your message has been sent successfully',
+                icon: 'success',
+                confirmButtonText: 'close'
+            },  response.status, response.text)
         }).catch((err) => {
-            console.log('Message could not be sent', err)
+            Swal.fire({
+                title: 'Oops...',
+                text: 'Your message could not be sent',
+                icon: 'error',
+                confirmButtonText: 'close'
+            }, err)
         })
     }
 
@@ -55,9 +66,44 @@ const Contact = () => {
                 my={7}
             >
                 <Box>
-                    <Text my={3} fontSize='md' fontWeight='medium' color={useColorModeValue('naturalYellow', 'white')}>Email: elvinafirmansyah@gmail.com</Text>
-                    <Text my={3} color={useColorModeValue('naturalYellow', 'white')} fontSize='md' fontWeight='medium'>Phone: +62 0896-3087-3931</Text>
-                    <Text my={3} color={useColorModeValue('naturalYellow', 'white')} fontSize='md' fontWeight='medium'>Discord: elvn#6545</Text>
+                    <Text my={3} fontSize='lg' fontWeight='medium' color={useColorModeValue('naturalYellow', 'white')}>Email: elvinafirmansyah@gmail.com</Text>
+                    <Text my={3} color={useColorModeValue('naturalYellow', 'white')} fontSize='lg' fontWeight='medium'>Phone: +62 0896-3087-3931</Text>
+                    <Text my={3} color={useColorModeValue('naturalYellow', 'white')} fontSize='lg' fontWeight='medium'>Discord: elvn#6545</Text>
+                    <Flex
+                        display='flex'
+                        my={8}
+                    >
+                        <Box 
+                            mr={7}
+                            color={useColorModeValue('indigo', 'white')}
+                        >
+                            <a href='https://www.instagram.com/elvinaelvira.s/' target='blank'><i className='fa-brands fa-instagram fa-2xl'></i></a>
+                        </Box>
+                        <Box 
+                            mr={7}
+                            color={useColorModeValue('indigo', 'white')}
+                        >
+                            <a href='https://m.facebook.com/elvina.firmansyah.50' target='blank'><i className='fa-brands fa-facebook fa-2xl'></i></a>
+                        </Box>
+                        <Box 
+                            mr={7}
+                            color={useColorModeValue('indigo', 'white')}
+                        >
+                            <a href='https://twitter.com/elvina_one' target='blank'><i className='fa-brands fa-twitter fa-2xl'></i></a>
+                        </Box>
+                        <Box 
+                            mr={7}
+                            color={useColorModeValue('indigo', 'white')}
+                        >
+                            <a href='https://github.com/elvinafirmansyah' target='blank'><i className='fa-brands fa-github fa-2xl'></i></a>
+                        </Box>
+                        <Box 
+                            mr={7}
+                            color={useColorModeValue('indigo', 'white')}
+                        >
+                            <a href='https://dribbble.com/Elvina_Vin19' target='blank'><i className='fa-brands fa-dribbble fa-2xl'></i></a>
+                        </Box>
+                    </Flex>
                 </Box>
                 <form onSubmit={handleSubmit}>
                     <Box>
