@@ -16,6 +16,7 @@ const Skills = () => {
             <Box>
                 <SimpleGrid 
                     mt={5}
+                    my={10}
                     columns={[1, 2, 4]}
                     spacing={10}
                 >
