@@ -209,12 +209,12 @@ const Project = () => {
     ]
 
     return(
-        <Box pt={[10, 12]}>
+        <Box pt={[10, 12]} pb={['9rem', '8rem', '9rem', '7rem']}>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>Project</Text>
             <Text as="h3" fontSize="xl">Selected Project i have worked on</Text>
                 <Box>
                     {projectData.map((project) => (
-                        <SimpleGrid columns={[1,2]} spacing={['10px', '10px', '40px', '40px']} my={10}>
+                        <SimpleGrid columns={[1,2]} spacing={['10px', '10px', '40px', '40px']} mt={10} mb={6}>
                             <Box>
                                 <Image
                                     src={project.img}
@@ -238,7 +238,7 @@ const Project = () => {
                                 <Text as='p'>{project.description}</Text>
                                 <SimpleGrid
                                     column={[1, 1, 2, 2]}
-                                    spacing={8}
+                                    spacing={3}
                                     display='block'
                                 >
                                     <Button 

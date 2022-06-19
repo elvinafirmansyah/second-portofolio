@@ -5,6 +5,7 @@ import About from './component/About';
 import Project from './component/Project';
 import Contact from './component/Contact';
 import Skills from './component/Skills';
+import Fotter from './component/Fotter';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from "./component/Navbar"
 import { Container, Box, Text } from '@chakra-ui/react';
@@ -33,16 +34,21 @@ const App = () => {
               <Text as="h2" fontSize="xl" mx={3} color="yellowNeon">Loading...</Text>
             </Box>
           ) : (
-            <Container maxW="container.lg">
-              <Navbar />
-              <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='about' element={<About />}/>
-                <Route path='project' element={<Project />}/>
-                <Route path='skills' element={<Skills/>} />
-                <Route path='contact' element={<Contact />}/>
-              </Routes>
-            </Container>
+            <Box
+              height='100vh'
+            >
+              <Container maxW="container.lg">
+                <Navbar />
+                <Routes>
+                  <Route path='/' element={<Home />}/>
+                  <Route path='about' element={<About />}/>
+                  <Route path='project' element={<Project />}/>
+                  <Route path='skills' element={<Skills/>} />
+                  <Route path='contact' element={<Contact />}/>
+                </Routes>
+              </Container>
+              <Fotter />
+            </Box>
           )
         }
       </Box>

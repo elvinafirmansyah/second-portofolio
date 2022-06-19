@@ -58,7 +58,7 @@ const Contact = () => {
         document.title = "Contact"
     }, []);
     return(
-        <Box pt={[10, 12]}>
+        <Box pt={[10, 12]} pb={['9rem', '8rem', '9rem', '7rem']}>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>Contact</Text>
             <SimpleGrid
                 columns={[1, 1, 2, 2]}

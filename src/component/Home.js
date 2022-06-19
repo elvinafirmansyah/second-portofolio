@@ -14,7 +14,7 @@ const Home = () => {
         document.title = "Home"
     }, []);
     return(
-        <Box pt={["1rem", "5.2rem"]}>
+        <Box pt={["1rem", "4rem"]} pb={['9rem', '8rem', '9rem', '7rem']}>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>hello, I'm Elvina</Text>
             <Box>
                 <Text fontSize="3xl" fontWeight="semibold" color={useColorModeValue("naturalYellow", "gray.500")}>I build and design creative websites and crafts</Text>
@@ -64,7 +64,7 @@ const Home = () => {
             <Stack
                 direction={["column", "row"]}
                 spacing={3}
-                my="20px"
+                mt="20px"
                 color={useColorModeValue("gray.900", "gray.300")}
                 fontWeight="medium"
             >

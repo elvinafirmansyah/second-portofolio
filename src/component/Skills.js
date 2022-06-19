@@ -11,12 +11,12 @@ const Skills = () => {
         document.title = "Skills"
     }, []);
     return(
-        <Box pt={[10, 12]}>
+        <Box pt={[10, 12]} pb='10rem'>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>Skills</Text>
             <Box>
                 <SimpleGrid 
                     mt={5}
-                    my={10}
+                    mb={3}
                     columns={[1, 2, 4]}
                     spacing={10}
                 >

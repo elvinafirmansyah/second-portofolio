@@ -13,7 +13,7 @@ const About = () => {
         document.title = "About"
     }, []);
     return(
-        <Box my={["3rem", "5rem"]}>
+        <Box mt={["2rem", "3rem"]} pb={['9rem', '8rem', '9rem', '7rem']}>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>About</Text>   
             <Box
                 py="13px"
