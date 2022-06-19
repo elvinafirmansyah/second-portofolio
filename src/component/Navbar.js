@@ -73,16 +73,16 @@ const MenuLinks = ({ isOpen }) => {
     >
       <Stack
         spacing={6}
-        align={["baseline", "center", "center", "center"]}
-        justify={["start", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "row", "row", "row"]}
+        align={["baseline", "baseline", "center", "center"]}
+        justify={["start", "flex-end", "flex-end", "flex-end"]}
+        direction={["column", "column", "row", "row"]}
         pt={[6, 3, 0, 0]}
       >
         <Box 
           color={useColorModeValue('black', 'yellowNeon')}
           _hover={{ bg: (useColorModeValue("gray.50", "kaca")) }}
           py={[0, 2]}
-          px={[0, 3]}
+          px={[0, 0, 3, 3]}
           borderRadius="7px"
         >
           <Link to='/'>Home</Link>
@@ -91,7 +91,7 @@ const MenuLinks = ({ isOpen }) => {
           color={useColorModeValue('black', 'yellowNeon')}
           _hover={{ bg: (useColorModeValue("gray.50", "kaca")) }}
           py={[0, 2]}
-          px={[0, 3]}
+          px={[0, 0, 3, 3]}
           borderRadius="7px"
         >
           <Link to='about'>About</Link>
@@ -100,7 +100,7 @@ const MenuLinks = ({ isOpen }) => {
           color={useColorModeValue('black', 'yellowNeon')}
           _hover={{ bg: (useColorModeValue("gray.50", "kaca")) }}
           py={[0, 2]}
-          px={[0, 3]}
+          px={[0, 0, 3, 3]}
           borderRadius="7px"
         >
           <Link to='project'>Project</Link>
@@ -109,7 +109,7 @@ const MenuLinks = ({ isOpen }) => {
           color={useColorModeValue('black', 'yellowNeon')}
           _hover={{ bg: (useColorModeValue("gray.50", "kaca")) }}
           py={[0, 2]}
-          px={[0, 3]}
+          px={[0, 0, 3, 3]}
           borderRadius="7px"
         >
           <Link to='skills'>Skills</Link>
@@ -118,7 +118,7 @@ const MenuLinks = ({ isOpen }) => {
           color={useColorModeValue('black', 'yellowNeon')}
           _hover={{ bg: (useColorModeValue("gray.50", "kaca")) }}
           py={[0, 2]}
-          px={[0, 3]}
+          px={[0, 0, 3, 3]}
           borderRadius="7px"
         >
           <Link to='contact'>Contact</Link>

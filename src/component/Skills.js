@@ -11,7 +11,7 @@ const Skills = () => {
         document.title = "Skills"
     }, []);
     return(
-        <Box pt={[10, 12]} pb='10rem'>
+        <Box pt={["2rem", "4rem"]} pb='10rem'>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>Skills</Text>
             <Box>
                 <SimpleGrid 

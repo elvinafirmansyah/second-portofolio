@@ -209,7 +209,7 @@ const Project = () => {
     ]
 
     return(
-        <Box pt={[10, 12]} pb={['9rem', '8rem', '9rem', '7rem']}>
+        <Box pt={["2rem", "4rem"]} pb={['9rem', '8rem', '9rem', '7rem']}>
             <Text fontSize="6xl" as="h1" fontWeight="Bold" color={useColorModeValue("indigo", "yellowNeon")}>Project</Text>
             <Text as="h3" fontSize="xl">Selected Project i have worked on</Text>
                 <Box>

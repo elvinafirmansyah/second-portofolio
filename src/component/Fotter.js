@@ -5,6 +5,7 @@ import {
   Container,
   useColorModeValue,
   Box,
+  Image,
 } from "@chakra-ui/react";
 
 const Fotter = () => {
@@ -12,8 +13,8 @@ const Fotter = () => {
     <Box>
       <Flex 
         pos='fixed'
-        bg={useColorModeValue("yellowNeon", "white")}
-        padding="1.5rem 1.5rem"
+        bg={useColorModeValue("indigo", "kaca")}
+        padding="1.2rem 1.5rem"
         width='100%'
         bottom={0}
       >
@@ -25,15 +26,18 @@ const Fotter = () => {
             minHeight='100%'
           >
             <Text
-            color={useColorModeValue("naturalYellow", "indigo")} 
+              color={useColorModeValue("naturalYellow", "white")} 
+              fontWeight='semibold'
+              pr={2}
             >
                 Support Me by
             </Text>
-            <Text
-                color={useColorModeValue("naturalYellow", "indigo")} 
+            <a
+              href="https://www.buymeacoffee.com/elvinafirmh"
+              target="blank"
             >
-                Support Me by
-            </Text>
+              <Image src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" rounded="md" />
+            </a>
           </Container>
       </Flex>
     </Box>
