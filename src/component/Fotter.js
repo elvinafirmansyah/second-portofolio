@@ -13,7 +13,7 @@ const Fotter = () => {
     <Box>
       <Flex 
         pos='fixed'
-        bg={useColorModeValue("indigo", "kaca")}
+        bg={useColorModeValue("indigo", "black")}
         padding="1.2rem 1.5rem"
         width='100%'
         bottom={0}

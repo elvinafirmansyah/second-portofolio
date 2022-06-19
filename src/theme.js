@@ -17,6 +17,7 @@ const theme = extendTheme({
       darkWhite: "#f2f2f2",
       lightIndigo: "#3e248c",
       lightYellow: "#f7ee48",
+      black: "#11092a",
       kaca: "RGBA(0, 0, 0, 0.5)",
     },
     styles: {
