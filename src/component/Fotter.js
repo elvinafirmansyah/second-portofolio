@@ -30,7 +30,7 @@ const Fotter = () => {
               fontWeight='semibold'
               pr={2}
             >
-                Support Me by
+                How to support me?
             </Text>
             <a
               href="https://www.buymeacoffee.com/elvinafirmh"
