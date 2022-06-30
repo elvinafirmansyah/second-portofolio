@@ -15,17 +15,6 @@ const Project = () => {
 
     const projectData = [
         {
-            img: process.env.PUBLIC_URL + '/img/project1.png',
-            title: 'Incriaysc',
-            description: 'Incriaysc is the platform to search any words by JavaScript. Incriaysc is made to make easier all learners, english learners exactly to be more understand what the meaning all words which you need. Made by JavaScript and Tailwind',
-            linkFirstButton: 'https://github.com/elvinafirmansyah/Dictionory-App',
-            buttonText: 'Github',
-            icon: 'fa-brands fa-github fa-lg',
-            linkText: 'See More',
-            iconLink: 'fa-solid fa-link',
-            link: 'https://dictionorycdn.vercel.app/'
-        },
-        {
             img: process.env.PUBLIC_URL + '/img/project9.png',
             title: 'Dribble API',
             description: 'Driible API is made by the feature of Dribble itself, i made it by applying the feature of dribble itself. it could be accessed by taking your own token instead of by just taking automatically. I made it for just filling my emptyness as both good as well as knowing how the dribble api is taken immediately on your own web by react itself.',
@@ -35,6 +24,17 @@ const Project = () => {
             linkText: 'See More',
             iconLink: 'fa-solid fa-link',
             link: 'https://dribblevin.vercel.app/',
+        },
+        {
+            img: process.env.PUBLIC_URL + '/img/project3.png',
+            title: 'News API',
+            description: 'Vin News is the project of Implementation API by React JS, that is made for online reader to be interactive within reading those news platforms, and we have CNN News, BBC News, CNBC, VOA. we provide all of those to be used because those platforms have the great news and included the most popular platform of news. hopefully you all will be pleased for reading all as both good as well as adding the useful news, Made by React JS', 
+            linkFirstButton: 'https://github.com/elvinafirmansyah/news-api-react',
+            buttonText: 'Github',
+            icon: 'fa-brands fa-github fa-lg',
+            linkText: 'See More',
+            iconLink: 'fa-solid fa-link',
+            link: 'https://vina-news.netlify.app/'
         },
         {
             img: process.env.PUBLIC_URL + '/img/project8.png',
@@ -48,6 +48,17 @@ const Project = () => {
             link: 'https://elvinashop.vercel.app/'
         },
         {
+            img: process.env.PUBLIC_URL + '/img/project1.png',
+            title: 'Incriaysc',
+            description: 'Incriaysc is the platform to search any words by JavaScript. Incriaysc is made to make easier all learners, english learners exactly to be more understand what the meaning all words which you need. Made by JavaScript and Tailwind',
+            linkFirstButton: 'https://github.com/elvinafirmansyah/Dictionory-App',
+            buttonText: 'Github',
+            icon: 'fa-brands fa-github fa-lg',
+            linkText: 'See More',
+            iconLink: 'fa-solid fa-link',
+            link: 'https://dictionorycdn.vercel.app/'
+        },
+        {
             img: process.env.PUBLIC_URL + '/img/project2.png',
             title: 'Quote App',
             description: 'This Quote App is definitely the leisure project thats simply made to fill emptiness at that time. that App is made to make all visiters to be supported at all of they do recently by all of the famous people and support themselves of being able to create the new stuff, Eg Winston S, Kody Keplinger and other ones. Made by JavaScript and Tailwind',
@@ -57,17 +68,6 @@ const Project = () => {
             linkText: 'See More',
             iconLink: 'fa-solid fa-link',
             link: 'https://vinaquote.netlify.app/'
-        },
-        {
-            img: process.env.PUBLIC_URL + '/img/project3.png',
-            title: 'News API',
-            description: 'Vin News is the project of Implementation API by React JS, that is made for online reader to be interactive within reading those news platforms, and we have CNN News, BBC News, CNBC, VOA. we provide all of those to be used because those platforms have the great news and included the most popular platform of news. hopefully you all will be pleased for reading all as both good as well as adding the useful news, Made by React JS', 
-            linkFirstButton: 'https://github.com/elvinafirmansyah/news-api-react',
-            buttonText: 'Github',
-            icon: 'fa-brands fa-github fa-lg',
-            linkText: 'See More',
-            iconLink: 'fa-solid fa-link',
-            link: 'https://vina-news.netlify.app/'
         },
         {
             img: process.env.PUBLIC_URL + '/img/project4.png',
@@ -211,12 +211,14 @@ const Project = () => {
                     {projectData.map((project) => (
                         <SimpleGrid columns={[1,2]} spacing={['10px', '10px', '40px', '40px']} mt={10} mb={6}>
                             <Box>
-                                <Image
-                                    src={project.img}
-                                    borderRadius='15px'
-                                    border='2px solid indigo'
-                                >
-                                </Image>
+                                <a href={project.link} target='blank'>
+                                    <Image
+                                        src={project.img}
+                                        borderRadius='15px'
+                                        border='2px solid indigo'
+                                    >
+                                    </Image>
+                                </a>
                             </Box>
                             <Box>
                                 <Text 
